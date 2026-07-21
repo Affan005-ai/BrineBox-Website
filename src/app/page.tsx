@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           <Image
-            src="/images/hero-freight.svg"
+            src="/images/hero-freight.jpg"
             alt="Container vessel, cargo aircraft, and freight route illustration"
             width={900}
             height={700}
