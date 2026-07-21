@@ -9,7 +9,7 @@ import { siteConfig } from "../../../config/site";
 
 export const metadata: Metadata = createMetadata(
   "Company Profile",
-  "Download the company profile PDF placeholder.",
+  "Download the company profile brochure for BrineBox.",
   "/company-profile",
 );
 
@@ -18,15 +18,15 @@ export default function CompanyProfilePage() {
     <>
       <PageHero
         eyebrow="Company Profile"
-        title="Download the company profile."
-        copy="The download points to public/company-profile.pdf. Replace that file with the final PDF to update the site automatically."
+        title="Download the BrineBox profile brochure."
+        copy="The company profile PDF is ready to be replaced with your final brochure for production launch."
       />
       <MotionSection>
         <Card className="grid gap-5 p-6 sm:grid-cols-[1fr_auto] sm:items-center">
           <div>
             <h2 className="text-xl font-semibold text-logistics-ink">Company profile PDF</h2>
             <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              The current file is a placeholder and should be replaced before production launch.
+              Replace this draft profile with the final BrineBox company brochure before launching the site.
             </p>
           </div>
           <LinkButton href={siteConfig.company.profilePdfPath} target="_blank" rel="noopener noreferrer">

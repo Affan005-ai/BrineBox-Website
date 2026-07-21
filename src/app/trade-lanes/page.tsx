@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata(
   "Trade Lanes",
-  "Priority trade lanes for Pakistan, China, Europe, the Middle East, and North America.",
+  "Trade lane coverage for Pakistan, the Middle East, Europe, China, South Asia and North America with routes including Karachi → Rotterdam, Karachi → Dubai, Shanghai → Singapore, and Los Angeles → Hamburg.",
   "/trade-lanes",
 );
 
@@ -15,8 +15,8 @@ export default function TradeLanesPage() {
     <>
       <PageHero
         eyebrow="Trade Lanes"
-        title="Focused route coverage across major international corridors."
-        copy="A simple trade lane model that can later expand into port guides, transit assumptions, and corridor-specific service pages."
+        title="Interactive freight corridors built for BrineBox global shipping."
+        copy="Explore premium route intelligence with live-hover details across our global corridors."
       />
       <MotionSection>
         <TradeLanes />

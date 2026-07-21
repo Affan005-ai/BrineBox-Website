@@ -5,12 +5,12 @@ import { MotionSection } from "@/components/sections/motion-section";
 import { policyContent } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createMetadata("Cookie Policy", "Cookie policy placeholder for the logistics website.", "/cookie-policy");
+export const metadata: Metadata = createMetadata("Cookie Policy", "Cookie policy guidance for the logistics website.", "/cookie-policy");
 
 export default function CookiePolicyPage() {
   return (
     <>
-      <PageHero eyebrow="Cookie Policy" title="Cookie policy placeholder." copy="The site does not add tracking cookies by default. Update this policy if analytics or third-party tools are added." />
+      <PageHero eyebrow="Cookie Policy" title="Cookie policy guidance." copy="BrineBox does not set tracking cookies by default. Update this policy when analytics or third-party tools are added." />
       <MotionSection>
         <Card className="grid gap-4 p-6">
           {policyContent.cookies.map((item) => (

@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata(
   "Services",
-  "Ocean freight, air freight, FCL, LCL, customs clearance, warehousing, door delivery, and supply chain solutions.",
+  "Freight forwarding and logistics services including ocean, air, customs, warehousing and delivery coordination.",
   "/services",
 );
 
@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="End-to-end freight forwarding and supply chain services."
-        copy="A clear service architecture covering international freight movement, customs, storage, and delivery workflows."
+        copy="Freight services that connect origin, transit and delivery across international routes with documentation-led support."
       />
       <MotionSection>
         <ServiceGrid />

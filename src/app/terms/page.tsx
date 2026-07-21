@@ -5,12 +5,12 @@ import { MotionSection } from "@/components/sections/motion-section";
 import { policyContent } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createMetadata("Terms & Conditions", "Terms and conditions placeholder for the logistics website.", "/terms");
+export const metadata: Metadata = createMetadata("Terms & Conditions", "Terms and conditions guidance for the logistics website.", "/terms");
 
 export default function TermsPage() {
   return (
     <>
-      <PageHero eyebrow="Terms & Conditions" title="Terms and conditions placeholder." copy="Replace this placeholder legal content with reviewed production terms before launch." />
+      <PageHero eyebrow="Terms & Conditions" title="Terms and conditions guidance." copy="Replace this legal content with reviewed production terms before launch." />
       <MotionSection>
         <Card className="grid gap-4 p-6">
           {policyContent.terms.map((item) => (

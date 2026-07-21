@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata(
   "Request a Quote",
-  "Request a freight forwarding quotation using a configurable static-site form.",
+  "Request a freight rate or logistics quote from BrineBox.",
   "/request-quote",
 );
 
@@ -15,8 +15,8 @@ export default function RequestQuotePage() {
     <>
       <PageHero
         eyebrow="Request a Quote"
-        title="Share shipment details for a structured freight quote."
-        copy="The form is ready for Formspree, EmailJS, Resend via a secure endpoint, or Cloudflare Workers through one configuration file."
+        title="Share your shipment details for a practical logistics estimate."
+        copy="Tell us the cargo profile, route and timing so we can provide a clear freight forwarding or customs support quote."
       />
       <MotionSection>
         <QuoteForm />

@@ -5,16 +5,16 @@ import { MotionSection } from "@/components/sections/motion-section";
 import { policyContent } from "@/lib/content";
 import { createMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = createMetadata("Privacy Policy", "Privacy policy placeholder for the logistics website.", "/privacy-policy");
+export const metadata: Metadata = createMetadata("Privacy Policy", "Privacy policy guidance for the logistics website.", "/privacy-policy");
 
 export default function PrivacyPolicyPage() {
-  return <PolicyPage eyebrow="Privacy Policy" title="Privacy policy placeholder." items={policyContent.privacy} />;
+  return <PolicyPage eyebrow="Privacy Policy" title="Privacy policy guidance." items={policyContent.privacy} />;
 }
 
 function PolicyPage({ eyebrow, title, items }: { eyebrow: string; title: string; items: string[] }) {
   return (
     <>
-      <PageHero eyebrow={eyebrow} title={title} copy="Replace this placeholder legal content with reviewed production policy language before launch." />
+      <PageHero eyebrow={eyebrow} title={title} copy="Replace this legal copy with reviewed production policy language before launch." />
       <MotionSection>
         <Card className="grid gap-4 p-6">
           {items.map((item) => (

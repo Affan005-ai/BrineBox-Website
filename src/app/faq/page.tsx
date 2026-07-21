@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata(
   "FAQ",
-  "Frequently asked questions about configuration, assets, forms, and Cloudflare Pages deployment.",
+  "Common questions about freight services, documentation, and logistics support.",
   "/faq",
 );
 
@@ -16,8 +16,8 @@ export default function FaqPage() {
     <>
       <PageHero
         eyebrow="FAQ"
-        title="Answers for setup, replacement assets, and deployment."
-        copy="These questions explain how the static logistics website is configured and prepared for production ownership."
+        title="Answers for freight services, documentation and logistics inquiries."
+        copy="Frequently asked questions about how BrineBox supports air, sea and customs logistics for business customers."
       />
       <MotionSection>
         <div className="grid gap-4">

@@ -10,7 +10,7 @@ export interface SiteConfig {
     whatsApp: string;
     address: string;
     website: string;
-    googleMapsUrl: string;
+    googleMapsUrl?: string;
     logoPath: string;
     logoAlt: string;
     profilePdfPath: string;
@@ -49,18 +49,17 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   company: {
-    name: "Brinebox Shipping ",
-    tagline: "Global shipping, handled with clarity.",
+    name: "BrineBox Shipping",
+    tagline: "Freight forwarding and logistics from Pakistan with clear execution.",
     description:
-      "A freight forwarding and supply chain partner for importers, exporters, manufacturers, and distributors moving cargo across critical trade lanes.",
+      "BrineBox Shipping provides freight forwarding, customs clearance, warehousing and trade lane coordination for importers, exporters and manufacturers.",
     email: "cs@brineboxshipping.com",
-    phone: "+00 000 0000000",
-    whatsApp: "+00 000 0000000",
-    address: "Office address placeholder, City, Country",
-    website: "https://brineboxshipping.com",
-    googleMapsUrl: "https://maps.google.com/?q=Office+Address+Placeholder",
+    phone: "+92 327 2594572",
+    whatsApp: "+92 327 2594572",
+    address: "Karachi, Pakistan",
+    website: "https://brinebox.com",
     logoPath: "/logo.png",
-    logoAlt: "Brinebox Shipping Line logo",
+    logoAlt: "BrineBox Shipping logo",
     profilePdfPath: "/company-profile.pdf",
   },
   navigation: [
@@ -73,9 +72,9 @@ export const siteConfig: SiteConfig = {
     { label: "Contact", href: "/contact" },
   ],
   socialLinks: {
-    linkedin: "https://linkedin.com/company/company-placeholder",
-    twitter: "https://twitter.com/company-placeholder",
-    facebook: "https://facebook.com/company-placeholder",
+    linkedin: "",
+    twitter: "",
+    facebook: "",
   },
   form: {
     provider: "cloudflare-workers",
@@ -91,26 +90,26 @@ export const siteConfig: SiteConfig = {
     cfWorkerUrl: "",
   },
   seo: {
-    titleTemplate: "%s | Brinebox Shipping Line",
-    defaultTitle: "Brinebox Shipping Line | Freight Forwarding & Supply Chain Solutions",
+    titleTemplate: "%s | BrineBox Shipping",
+    defaultTitle: "BrineBox Shipping | Freight Forwarding & Logistics",
     defaultDescription:
-      "Freight forwarding, customs clearance, warehousing, and supply chain support across Pakistan, China, Europe, the Middle East, and North America.",
-    siteUrl: "https://brineboxshipping.com",
+      "BrineBox Shipping offers freight forwarding, customs clearance, warehousing and supply chain support from Pakistan to key international markets.",
+    siteUrl: "https://brinebox.com",
     keywords: [
       "freight forwarding",
-      "logistics company",
+      "logistics Pakistan",
       "ocean freight",
       "air freight",
       "customs clearance",
-      "supply chain solutions",
-      "FCL shipping",
-      "LCL cargo",
       "warehousing",
-      "door delivery",
-      "Pakistan logistics",
-      "China shipping",
-      "global shipping solutions",
+      "supply chain",
+      "FCL",
+      "LCL",
+      "import logistics",
+      "export logistics",
+      "trade lanes",
+      "international shipping",
     ],
-    twitterHandle: "@companyplaceholder",
+    twitterHandle: "@BrineBox",
   },
 };

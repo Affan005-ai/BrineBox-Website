@@ -7,7 +7,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata(
   "Industries",
-  "Logistics support for textiles, garments, rice, agriculture, chemicals, electronics, industrial equipment, and automotive cargo.",
+  "Logistics support for manufacturing, retail, automotive, industrial equipment, food and other commercial sectors.",
   "/industries",
 );
 
@@ -19,7 +19,7 @@ export default function IndustriesPage() {
       <PageHero
         eyebrow="Industries"
         title="Professional cargo support for recurring industry needs."
-        copy="Industry sections are structured for real service detail later, without relying on fabricated claims or placeholder customer logos."
+        copy="We serve sectors with repeated freight requirements, offering the right planning and documentation for each cargo type."
       />
       <MotionSection>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

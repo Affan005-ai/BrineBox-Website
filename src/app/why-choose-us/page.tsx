@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata(
   "Why Choose Us",
-  "A clean, credible logistics website architecture without fabricated proof points.",
+  "Why BrineBox is a reliable partner for freight movement and logistics coordination.",
   "/why-choose-us",
 );
 
@@ -17,8 +17,8 @@ export default function WhyChooseUsPage() {
     <>
       <PageHero
         eyebrow="Why Choose Us"
-        title="Credibility comes from clarity, not invented proof points."
-        copy="The site is structured to become a real corporate presence once company details, assets, and form endpoints are configured."
+        title="Why BrineBox is a reliable partner for freight movement and logistics coordination."
+        copy="We deliver logistics support through transparent communication, consistent execution and practical service options."
       />
       <MotionSection>
         <div className="grid gap-4 md:grid-cols-2">
