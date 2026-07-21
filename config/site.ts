@@ -1,4 +1,4 @@
-export type FormProvider = 'formspree' | 'emailjs' | 'resend' | 'cloudflare-workers';
+export type FormProvider = "formspree" | "emailjs" | "resend" | "cloudflare-workers";
 
 export interface SiteConfig {
   company: {
@@ -15,6 +15,10 @@ export interface SiteConfig {
     logoAlt: string;
     profilePdfPath: string;
   };
+  navigation: {
+    label: string;
+    href: string;
+  }[];
   socialLinks: {
     linkedin: string;
     twitter: string;
@@ -28,9 +32,8 @@ export interface SiteConfig {
     emailjsServiceId: string;
     emailjsTemplateId: string;
     emailjsPublicKey: string;
-    // Resend config
-    resendApiKey: string;
-    resendToEmail: string;
+    // Resend should be proxied through a Worker or secure endpoint for static sites.
+    resendEndpointUrl: string;
     // Cloudflare Workers config
     cfWorkerUrl: string;
   };
@@ -46,61 +49,68 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   company: {
-    name: 'Brinebox Logistics',
-    tagline: 'Global Logistics, Simplified.',
-    description: 'A premium, modern freight forwarding and supply chain solutions provider. We connect markets, streamline cargo transit, and deliver trust across the globe.',
-    email: 'operations@brineboxlogistics.example.com', // Professional placeholder
-    phone: '+92 21 35123456', // Pakistan placeholder format (inspired by Karachi)
-    whatsApp: '+92 300 1234567',
-    address: 'Suite 402, 4th Floor, Horizon Tower, Clifton Block 3, Karachi, Pakistan',
-    website: 'https://brineboxlogistics.example.com',
-    googleMapsUrl: 'https://maps.google.com/?q=Horizon+Tower+Clifton+Karachi',
-    logoPath: '/logo.png',
-    logoAlt: 'Brinebox Logistics Logo',
-    profilePdfPath: '/company-profile.pdf',
+    name: "Brinebox Shipping ",
+    tagline: "Global shipping, handled with clarity.",
+    description:
+      "A freight forwarding and supply chain partner for importers, exporters, manufacturers, and distributors moving cargo across critical trade lanes.",
+    email: "cs@brineboxshipping.com",
+    phone: "+00 000 0000000",
+    whatsApp: "+00 000 0000000",
+    address: "Office address placeholder, City, Country",
+    website: "https://brineboxshipping.com",
+    googleMapsUrl: "https://maps.google.com/?q=Office+Address+Placeholder",
+    logoPath: "/logo.png",
+    logoAlt: "Brinebox Shipping Line logo",
+    profilePdfPath: "/company-profile.pdf",
   },
+  navigation: [
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Industries", href: "/industries" },
+    { label: "Trade Lanes", href: "/trade-lanes" },
+    { label: "Why Us", href: "/why-choose-us" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Contact", href: "/contact" },
+  ],
   socialLinks: {
-    linkedin: 'https://linkedin.com/company/brinebox-logistics-placeholder',
-    twitter: 'https://twitter.com/brinebox-placeholder',
-    facebook: 'https://facebook.com/brinebox-placeholder',
+    linkedin: "https://linkedin.com/company/company-placeholder",
+    twitter: "https://twitter.com/company-placeholder",
+    facebook: "https://facebook.com/company-placeholder",
   },
   form: {
-    // Highly configurable form submission provider.
-    // Set to 'formspree', 'emailjs', 'resend', or 'cloudflare-workers'
-    provider: 'formspree', 
+    provider: "cloudflare-workers",
     
-    // Configurations for each provider (configured with dummy values, easily editable)
-    formspreeId: 'xoqgqgqj', // Replace with actual Formspree form ID
+    formspreeId: "",
     
-    emailjsServiceId: 'service_dummy',
-    emailjsTemplateId: 'template_dummy',
-    emailjsPublicKey: 'public_key_dummy',
+    emailjsServiceId: "",
+    emailjsTemplateId: "",
+    emailjsPublicKey: "",
     
-    resendApiKey: 're_dummy_key_12345678',
-    resendToEmail: 'inbound@brineboxlogistics.example.com',
+    resendEndpointUrl: "",
     
-    cfWorkerUrl: 'https://form-receiver.brinebox.workers.dev',
+    cfWorkerUrl: "",
   },
   seo: {
-    titleTemplate: '%s | Brinebox Logistics',
-    defaultTitle: 'Brinebox Logistics | Global Freight Forwarding & Supply Chain Solutions',
-    defaultDescription: 'Premium end-to-end logistics, ocean & air freight forwarding, customs clearance, and supply chain management. Delivering seamless cargo services across Pakistan, China, Europe, Middle East, and North America.',
-    siteUrl: 'https://brineboxlogistics.example.com',
+    titleTemplate: "%s | Brinebox Shipping Line",
+    defaultTitle: "Brinebox Shipping Line | Freight Forwarding & Supply Chain Solutions",
+    defaultDescription:
+      "Freight forwarding, customs clearance, warehousing, and supply chain support across Pakistan, China, Europe, the Middle East, and North America.",
+    siteUrl: "https://brineboxshipping.com",
     keywords: [
-      'freight forwarding',
-      'logistics company',
-      'ocean freight',
-      'air freight',
-      'customs clearance',
-      'supply chain solutions',
-      'FCL shipping',
-      'LCL cargo',
-      'warehousing',
-      'door delivery',
-      'Pakistan logistics',
-      'China shipping',
-      'global shipping solutions'
+      "freight forwarding",
+      "logistics company",
+      "ocean freight",
+      "air freight",
+      "customs clearance",
+      "supply chain solutions",
+      "FCL shipping",
+      "LCL cargo",
+      "warehousing",
+      "door delivery",
+      "Pakistan logistics",
+      "China shipping",
+      "global shipping solutions",
     ],
-    twitterHandle: '@BrineboxLogistics',
+    twitterHandle: "@companyplaceholder",
   },
 };
