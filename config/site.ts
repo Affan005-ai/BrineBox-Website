@@ -50,7 +50,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   company: {
     name: "BrineBox Shipping",
-    tagline: "Freight forwarding and logistics from Pakistan with clear execution.",
+    tagline: " freight forwarding and logistics from Pakistan with clear execution.",
     description:
       "BrineBox Shipping provides freight forwarding, customs clearance, warehousing and trade lane coordination for importers, exporters and manufacturers.",
     email: "cs@brineboxshipping.com",
@@ -77,9 +77,9 @@ export const siteConfig: SiteConfig = {
     facebook: "",
   },
   form: {
-    provider: "cloudflare-workers",
+    provider: "formspree",
     
-    formspreeId: "",
+    formspreeId: "mvzeboqj",
     
     emailjsServiceId: "",
     emailjsTemplateId: "",
@@ -91,10 +91,10 @@ export const siteConfig: SiteConfig = {
   },
   seo: {
     titleTemplate: "%s | BrineBox Shipping",
-    defaultTitle: "BrineBox Shipping | Freight Forwarding & Logistics",
+    defaultTitle: "BrineBox Shipping | International Freight Forwarding & Logistics",
     defaultDescription:
       "BrineBox Shipping offers freight forwarding, customs clearance, warehousing and supply chain support from Pakistan to key international markets.",
-    siteUrl: "https://brinebox.com",
+    siteUrl: "https://brineboxshipping.com",
     keywords: [
       "freight forwarding",
       "logistics Pakistan",

@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Download } from "lucide-react";
-import { LinkButton } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PageHero } from "@/components/sections/page-hero";
 import { MotionSection } from "@/components/sections/motion-section";
 import { createMetadata } from "@/lib/seo";
-import { siteConfig } from "../../../config/site";
 
 export const metadata: Metadata = createMetadata(
   "Company Profile",
@@ -29,10 +27,16 @@ export default function CompanyProfilePage() {
               Replace this draft profile with the final BrineBox company brochure before launching the site.
             </p>
           </div>
-          <LinkButton href={siteConfig.company.profilePdfPath} target="_blank" rel="noopener noreferrer">
+          <a
+            href="/company-profile.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          >
             <Download className="h-4 w-4" />
-            Download PDF
-          </LinkButton>
+            Download Company Profile
+          </a>
         </Card>
       </MotionSection>
     </>

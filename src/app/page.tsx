@@ -45,7 +45,7 @@ export default function Home() {
         <div className="relative z-10">
           <div className="container grid min-h-[calc(100svh-4rem)] items-center py-20">
             <div className="max-w-3xl">
-              <p className="eyebrow text-white/90">Freight Forwarding & Logistics</p>
+              <p className="eyebrow text-white/90">International Freight Forwarding & Logistics</p>
               <h1 className="mt-4 text-white font-semibold leading-tight tracking-tight text-4xl sm:text-5xl lg:text-7xl">
                 {siteConfig.company.name}
               </h1>
@@ -57,10 +57,17 @@ export default function Home() {
                   Request a Quote
                   <ArrowRight className="h-4 w-4" />
                 </LinkButton>
-                <LinkButton href="/company-profile" variant="outline" size="lg" aria-label="Download company profile">
+                <a
+                  href="/company-profile.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-border bg-background px-6 text-base font-semibold text-foreground transition-colors hover:bg-accent"
+                  aria-label="Download company profile"
+                >
                   <Download className="h-4 w-4" />
                   Company Profile
-                </LinkButton>
+                </a>
               </div>
             </div>
           </div>

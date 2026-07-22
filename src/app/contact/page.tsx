@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import fs from "fs";
-import path from "path";
+ 
 import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Card } from "@/components/ui/card";
@@ -19,11 +18,10 @@ export const metadata: Metadata = createMetadata(
 export default function ContactPage() {
   const contactImage = (() => {
     try {
-      const p = path.join(process.cwd(), "public", "images", "contact-office.jpg");
+      return "/images/contact-office.jpg";
     } catch {
-      // ignore missing image
+      return "";
     }
-    return "";
   })();
 
   return (
