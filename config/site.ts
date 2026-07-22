@@ -50,7 +50,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   company: {
     name: "BrineBox Shipping",
-    tagline: " freight forwarding and logistics from Pakistan with clear execution.",
+    tagline: "Freight forwarding and logistics from Pakistan with clear execution.",
     description:
       "BrineBox Shipping provides freight forwarding, customs clearance, warehousing and trade lane coordination for importers, exporters and manufacturers.",
     email: "cs@brineboxshipping.com",
