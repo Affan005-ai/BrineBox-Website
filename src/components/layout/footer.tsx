@@ -20,7 +20,7 @@ function QuickActions() {
       await navigator.clipboard.writeText(siteConfig.seo.siteUrl);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
+    } catch {
       // ignore clipboard errors
     }
   };
@@ -66,7 +66,7 @@ export function Footer() {
         <div>
           <p className="text-lg font-semibold tracking-tight text-white">Get in Touch</p>
           <p className="mt-4 max-w-md text-sm leading-7 text-white/70">
-            Have questions about shipping, freight forwarding, or customs support? Contact our team by email, phone, WhatsApp, or the inquiry form. We're here to discuss your logistics requirements.
+            Have questions about shipping, freight forwarding, or customs support? Contact our team by email, phone, WhatsApp, or the inquiry form. We&apos;re here to discuss your logistics requirements.
           </p>
           <p className="mt-6 max-w-md text-sm leading-7 text-white/70">{siteConfig.company.description}</p>
         </div>
@@ -125,8 +125,8 @@ export function Footer() {
         <div>
           <p className="font-semibold text-white">Business Hours</p>
           <div className="mt-5 grid gap-3 text-sm text-white/70">
-            <p>Mon – Fri: 9:00 AM – 6:00 PM</p>
-            <p>Sat: 10:00 AM – 2:00 PM</p>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+            <p>Sat: 10:00 AM - 2:00 PM</p>
             <p>Sun: Closed</p>
             <p className="text-white/60">Local Karachi time</p>
           </div>
